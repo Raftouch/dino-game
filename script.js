@@ -9,12 +9,12 @@ const jump = () => {
   if (dino.classList != 'jump') {
     dino.classList.add('jump')
   }
-  setTimeout(function () {
+  setTimeout(() => {
     dino.classList.remove('jump')
   }, 300)
 }
 
-let isAlive = setInterval(function () {
+let isAlive = setInterval(() => {
   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'))
   let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'))
 
